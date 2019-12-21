@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:visibility="visible"
+        android:id="@+id/lv_video_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/tv_nomedia"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:text="没有找到视频"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/pb_loding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
+
+    <!--解决Android 9.0 http无法访问网络问题，还需在AndroidManifest.xml清单文件上加入android:networkSecurityConfig="@xml/network_security_config"-->

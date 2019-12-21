@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:scaleType="fitXY"
+            android:background="@drawable/my_icon"
+            android:layout_width="120dp"
+            android:layout_height="80dp" />
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/center_collect_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/rl"
+        android:layout_toRightOf="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_video_name"
+            android:textSize="20sp"
+            android:text="标题"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_video_title"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:text="描述..."
+            android:lines="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--android:lines="2"   两行
+          android:singleLine="true"  单行
+        -->
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

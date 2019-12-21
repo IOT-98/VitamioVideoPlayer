@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mobileplayer.view.TitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#5b9bd5"
+    android:gravity="center_vertical"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/my_icon" />
+
+    <!--
+    text属性
+    android:background="@drawable/search_bg_selector"  设置背景
+    android:drawableLeft="@drawable/searche_left"  设置左边的图片
+    android:textColor="@drawable/search_textcolor_selector"   设置文字颜色
+    以上的三个设置都可以使用Selector选择器来设置变化
+
+    android:clickable="true"  设置可点击-->
+
+    <TextView
+        android:id="@+id/tv_seache"
+        android:clickable="true"
+        android:background="@drawable/search_bg_selector"
+        android:textColor="@drawable/search_textcolor_selector"
+        android:drawableLeft="@drawable/searche_left"
+
+        android:drawablePadding="5dp"
+        android:gravity="left|center_vertical"
+        android:text="搜索"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_history"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_topbanner_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</com.example.mobileplayer.view.TitleBar>

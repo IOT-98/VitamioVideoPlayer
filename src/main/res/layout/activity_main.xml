@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/titlebar"></include>
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+    </FrameLayout>
+
+
+    <RadioGroup
+        android:background="#EBEBEB"
+        android:id="@+id/rg_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--每个RadioButton都有相同的属性，这里可以把他们定义为一个样式-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:button="@android:color/transparent"   设置透明-->
+        <!--android:background="@android:color/transparent"  设置透明-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawablePadding="4dp"-->
+        <!--android:textColor="@drawable/text_color_selector"  文本的多状态选择器-->
+
+        <RadioButton
+            style="@style/rb_bottom_style"
+            android:id="@+id/rb_video"
+            android:drawableTop="@drawable/rb_video_selector"
+            android:text="本地视频"
+            />
+        <RadioButton
+            style="@style/rb_bottom_style"
+            android:id="@+id/rb_net_video"
+            android:drawableTop="@drawable/rb_net_video_selector"
+            android:text="网络视频"
+            />
+        <RadioButton
+            style="@style/rb_bottom_style"
+            android:id="@+id/rb_net_tv"
+            android:drawableTop="@drawable/rb_audio_selector"
+            android:text="电视直播"
+            />
+    </RadioGroup>
+
+</LinearLayout>
